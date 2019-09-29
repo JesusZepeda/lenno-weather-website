@@ -27,22 +27,14 @@ app.use(express.static(publicDirectoryPath))
 app.get('', (req, res) => {
     res.render('index', {
         title: 'Weather',
-<<<<<<< HEAD
         name: 'Jes Zepeda'
-=======
-        name: 'Jes Z'
->>>>>>> 264f51147873eb57e3cb47a975c01401f57c4e72
     })
 })
 
 app.get('/about', (req, res) => {
     res.render('about', {
         title: 'About Me',
-<<<<<<< HEAD
         name: 'Jes Zepeda'
-=======
-        name: 'Jes Z'
->>>>>>> 264f51147873eb57e3cb47a975c01401f57c4e72
     })
 })
 
@@ -50,11 +42,7 @@ app.get('/help', (req, res) => {
     res.render('help', {
         helpText: 'This is some helpful text.',
         title: 'Help',
-<<<<<<< HEAD
         name: 'Jes Zepeda'
-=======
-        name: 'Jes Z'
->>>>>>> 264f51147873eb57e3cb47a975c01401f57c4e72
     })
 })
 
@@ -100,11 +88,7 @@ app.get('/products', (req, res) => {
 app.get('/help/*', (req, res) => {
     res.render('404', {
         title: '404',
-<<<<<<< HEAD
         name: 'Jes Zepeda',
-=======
-        name: 'J Zep',
->>>>>>> 264f51147873eb57e3cb47a975c01401f57c4e72
         errorMessage: 'Help article not found.'
     })
 })
@@ -112,21 +96,11 @@ app.get('/help/*', (req, res) => {
 app.get('*', (req, res) => {
     res.render('404', {
         title: '404',
-<<<<<<< HEAD
         name: 'Jes Zepeda',
-=======
-        name: 'J Zep',
->>>>>>> 264f51147873eb57e3cb47a975c01401f57c4e72
         errorMessage: 'Page not found.'
     })
 })
 
-<<<<<<< HEAD
-=======
-// app.listen(3000, () => {
-//     console.log('Server is up on port 3000.')
-// })
->>>>>>> 264f51147873eb57e3cb47a975c01401f57c4e72
 app.listen(port, () => {
     console.log('Server is up on port ' + port)
 })
